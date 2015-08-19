@@ -23,3 +23,5 @@ Export-ModuleMember Get-RestSearchResults
 Export-ModuleMember Get-KeyCredentialsManifest
 
 Export-ModuleMember Get-AccessToken, Invoke-SecuredRestMethod
+
+Export-ModuleMember Get-PersonalSite

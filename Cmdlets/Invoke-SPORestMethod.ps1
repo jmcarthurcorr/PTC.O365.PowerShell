@@ -62,7 +62,7 @@ function global:Invoke-SPORestMethod {
 
     Begin {
         if ((Get-Module Microsoft.Online.SharePoint.PowerShell -ListAvailable) -eq $null) {
-            throw "The Microsoft SharePoint Online PowerShell cmdlets have not been installed."
+            #throw "The Microsoft SharePoint Online PowerShell cmdlets have not been installed."
         }
         if ($global:spoCred -eq $null) {
             [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.Runtime") | Out-Null
