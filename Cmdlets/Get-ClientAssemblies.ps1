@@ -36,7 +36,7 @@ function Get-ClientAssemblies()
   #-----------------------------------------------------------------------
   # Getting all the files from the GitHub Path
   #-----------------------------------------------------------------------
-  $files = Get-FilesFromGitHub -Owner "officedev" -Repo "pnp" -Path $assembliesPath
+  $files = Get-FilesFromGitHub -Owner "officedev" -Repo "pnp-sites-core" -Path $assembliesPath
   
   #-----------------------------------------------------------------------
   # Downloading each file from the GitHub Path
