@@ -1,4 +1,4 @@
-$TENANT_NAME = "slevertcie01"
+$TENANT_NAME = "XXX"
 	
 $ADMIN_USERNAME_FORMAT = "admin@{0}.onmicrosoft.com"
 $ADMIN_USERNAME = [String]::Format($ADMIN_USERNAME_FORMAT, $TENANT_NAME)
