@@ -1,18 +1,18 @@
 . .\00-Constants.ps1
 . .\00-Initialize.ps1
 
-$exchangeResourceUri = "https://outlook.office365.com/";
-$url = "https://outlook.office365.com/api/v1.0/users('$USER_USERNAME')/sendmail"
+$graphUri = "https://graph.microsoft.com"
+$url = "https://graph.microsoft.com/v1.0/users('$USER_USERNAME')/microsoft.graph.sendMail"
 
 try {
-  $accessToken = Get-AccessToken -ResourceUri $exchangeResourceUri
-    
+  $accessToken = Get-AccessToken -ResourceUri $graphUri
+  
   $body = @{
     "Message" = @{
       "Subject" = "This is a test email from PowerShell!"
       "Body" = @{
-        "ContentType" = "Text"
-        "Content" = "This email was sent from PowerShell using the Office 365 API."
+        "ContentType" = "HTML"
+        "Content" = "This email was sent from PowerShell using the Microsoft Graph."
       }
       "ToRecipients" = @(
         @{ 
