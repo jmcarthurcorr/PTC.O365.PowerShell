@@ -2,7 +2,7 @@
 . .\00-Initialize.ps1
 
 $graphUri = "https://graph.microsoft.com"
-$url = "https://graph.microsoft.com/v1.0/users('$USER_USERNAME')/mailFolders/inbox/messages?$top=50"
+$url = "https://graph.microsoft.com/v1.0/users('$ADMIN_USERNAME')/mailFolders/inbox/messages?$top=50"
 
 try {
   $accessToken = Get-AccessToken -ResourceUri $graphUri

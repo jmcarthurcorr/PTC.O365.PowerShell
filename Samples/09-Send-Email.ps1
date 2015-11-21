@@ -17,7 +17,7 @@ try {
       "ToRecipients" = @(
         @{ 
           "EmailAddress" = @{
-            "Address" = "$USER_USERNAME"
+            "Address" = "$ADMIN_USERNAME"
           }
         }
       )
